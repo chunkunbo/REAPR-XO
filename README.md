@@ -22,3 +22,12 @@ Line 15: Name your generated vhdl file.
 Line 16: Name you module.
 Line 30-33: modify this to your own device configuration. In this example, we use AWS-F1 as our device. We also provide a couple othe examples.
 Line 35: modify the number of reports of your application.
+
+## Run REAPR-XO
+To run REAPR-XO, first set up the envrironment variables.
+source source_me.sh
+Then modify the entry file as suggested in the above section and simply run the command.
+./run.sh
+This will generate the host executable and the xclbin file. Users can run their applications on the FPGA device.
+If users want to run AWS-F1, extra steps are needed.
+Please refer to (https://github.com/chunkunbo/REARP-on-Amazon-F1) for details.
