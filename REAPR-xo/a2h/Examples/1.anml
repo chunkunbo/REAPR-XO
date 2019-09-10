@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<automata-network id="mismatch1" name="mismatch1">
+        <description></description>
+        <state-transition-element id="1" symbol-set="[Aa]" start="all-input">
+                <activate-on-match element="2"/>
+                <activate-on-match element="12"/>
+        </state-transition-element> 
+        <state-transition-element id="11" symbol-set="[^Aa]" start="all-input">
+                <activate-on-match element="22"/>
+        </state-transition-element> 
+        <state-transition-element id="2" symbol-set="[Cc]">
+                <activate-on-match element="3"/>
+                <activate-on-match element="13"/>
+        </state-transition-element> 
+        <state-transition-element id="12" symbol-set="[^Cc]">
+                <activate-on-match element="23"/>
+        </state-transition-element> 
+        <state-transition-element id="22" symbol-set="[Cc]">
+                <activate-on-match element="23"/>
+        </state-transition-element> 
+        <state-transition-element id="3" symbol-set="[Kk]">
+                <activate-on-match element="4"/>
+                <activate-on-match element="14"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="13" symbol-set="[^Kk]">
+                <activate-on-match element="24"/>
+        </state-transition-element> 
+        <state-transition-element id="23" symbol-set="[Kk]">
+                <activate-on-match element="24"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="4" symbol-set="[Ee]">
+                <activate-on-match element="5"/>
+                <activate-on-match element="15"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="14" symbol-set="[^Ee]">
+                <activate-on-match element="25"/>
+        </state-transition-element> 
+        <state-transition-element id="24" symbol-set="[Ee]">
+                <activate-on-match element="25"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="5" symbol-set="[Rr]">
+                <activate-on-match element="6"/>
+                <activate-on-match element="16"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="15" symbol-set="[^Rr]">
+                <activate-on-match element="26"/>
+        </state-transition-element> 
+        <state-transition-element id="25" symbol-set="[Rr]">
+                <activate-on-match element="26"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="6" symbol-set="+">
+                <activate-on-match element="7"/>
+                <activate-on-match element="17"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="16" symbol-set="+">
+                <activate-on-match element="27"/>
+        </state-transition-element> 
+        <state-transition-element id="26" symbol-set="+">
+                <activate-on-match element="27"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="7" symbol-set="+">
+                <activate-on-match element="8"/>
+                <activate-on-match element="18"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="17" symbol-set="+">
+                <activate-on-match element="28"/>
+        </state-transition-element> 
+        <state-transition-element id="27" symbol-set="+">
+                <activate-on-match element="28"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="8" symbol-set="+">
+                <activate-on-match element="9"/>
+                <activate-on-match element="19"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="18" symbol-set="+">
+                <activate-on-match element="29"/>
+        </state-transition-element> 
+        <state-transition-element id="28" symbol-set="+">
+                <activate-on-match element="29"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="9" symbol-set="+">
+                <activate-on-match element="10"/>
+                <activate-on-match element="20"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="19" symbol-set="+">
+                <activate-on-match element="30"/>
+        </state-transition-element> 
+        <state-transition-element id="29" symbol-set="+">
+                <activate-on-match element="30"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="10" symbol-set="+">
+                <activate-on-match element="21"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="20" symbol-set="+">
+                <activate-on-match element="31"/>
+        </state-transition-element> 
+        <state-transition-element id="30" symbol-set="+">
+                <activate-on-match element="31"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="21" symbol-set="+">
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="31" symbol-set="+">
+                <activate-on-match element="33"/>
+                <activate-on-match element="32"/>
+        </state-transition-element> 
+        <state-transition-element id="34" symbol-set="+">
+                <activate-on-match element="35"/>
+                <activate-on-match element="39"/>
+        </state-transition-element> 
+        <state-transition-element id="38" symbol-set="+">
+                <activate-on-match element="43"/>
+        </state-transition-element> 
+        <state-transition-element id="35" symbol-set="+">
+                <activate-on-match element="36"/>
+                <activate-on-match element="40"/>
+        </state-transition-element> 
+        <state-transition-element id="39" symbol-set="+">
+                <activate-on-match element="44"/>
+        </state-transition-element> 
+        <state-transition-element id="43" symbol-set="+">
+                <activate-on-match element="44"/>
+        </state-transition-element> 
+        <state-transition-element id="36" symbol-set="+">
+                <activate-on-match element="37"/>
+                <activate-on-match element="41"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="47"/>
+        </state-transition-element> 
+        <state-transition-element id="40" symbol-set="+">
+                <activate-on-match element="45"/>
+        </state-transition-element> 
+        <state-transition-element id="44" symbol-set="+">
+                <activate-on-match element="45"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="47"/>
+        </state-transition-element> 
+        <state-transition-element id="37" symbol-set="+">
+                <activate-on-match element="42"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="47"/>
+        </state-transition-element> 
+        <state-transition-element id="41" symbol-set="+">
+                <activate-on-match element="46"/>
+        </state-transition-element> 
+        <state-transition-element id="45" symbol-set="+">
+                <activate-on-match element="46"/>
+                <activate-on-match element="33"/>
+                <activate-on-match element="47"/>
+        </state-transition-element> 
+        <state-transition-element id="42" symbol-set="+">
+                <activate-on-match element="33"/>
+                <activate-on-match element="47"/>
+        </state-transition-element> 
+        <state-transition-element id="46" symbol-set="+">
+                <activate-on-match element="33"/>
+                <activate-on-match element="47"/>
+        </state-transition-element> 
+        <state-transition-element id="51" symbol-set="[Ww]">
+                <activate-on-match element="52"/>
+                <activate-on-match element="62"/>
+        </state-transition-element> 
+        <state-transition-element id="61" symbol-set="[^Ww]">
+                <activate-on-match element="72"/>
+        </state-transition-element> 
+        <state-transition-element id="52" symbol-set="[Ii]">
+                <activate-on-match element="53"/>
+                <activate-on-match element="63"/>
+        </state-transition-element> 
+        <state-transition-element id="62" symbol-set="[^Ii]">
+                <activate-on-match element="73"/>
+        </state-transition-element> 
+        <state-transition-element id="72" symbol-set="[Ii]">
+                <activate-on-match element="73"/>
+        </state-transition-element> 
+        <state-transition-element id="53" symbol-set="[Ll]">
+                <activate-on-match element="54"/>
+                <activate-on-match element="64"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="63" symbol-set="[^Ll]">
+                <activate-on-match element="74"/>
+        </state-transition-element> 
+        <state-transition-element id="73" symbol-set="[Ll]">
+                <activate-on-match element="74"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="54" symbol-set="[Ll]">
+                <activate-on-match element="55"/>
+                <activate-on-match element="65"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="64" symbol-set="[^Ll]">
+                <activate-on-match element="75"/>
+        </state-transition-element> 
+        <state-transition-element id="74" symbol-set="[Ll]">
+                <activate-on-match element="75"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="55" symbol-set="[Ii]">
+                <activate-on-match element="56"/>
+                <activate-on-match element="66"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="65" symbol-set="[^Ii]">
+                <activate-on-match element="76"/>
+        </state-transition-element> 
+        <state-transition-element id="75" symbol-set="[Ii]">
+                <activate-on-match element="76"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="56" symbol-set="[Aa]">
+                <activate-on-match element="57"/>
+                <activate-on-match element="67"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="66" symbol-set="[^Aa]">
+                <activate-on-match element="77"/>
+        </state-transition-element> 
+        <state-transition-element id="76" symbol-set="[Aa]">
+                <activate-on-match element="77"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="57" symbol-set="[Mm]">
+                <activate-on-match element="58"/>
+                <activate-on-match element="68"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="67" symbol-set="[^Mm]">
+                <activate-on-match element="78"/>
+        </state-transition-element> 
+        <state-transition-element id="77" symbol-set="[Mm]">
+                <activate-on-match element="78"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="58" symbol-set="+">
+                <activate-on-match element="59"/>
+                <activate-on-match element="69"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="68" symbol-set="+">
+                <activate-on-match element="79"/>
+        </state-transition-element> 
+        <state-transition-element id="78" symbol-set="+">
+                <activate-on-match element="79"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="59" symbol-set="+">
+                <activate-on-match element="60"/>
+                <activate-on-match element="70"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="69" symbol-set="+">
+                <activate-on-match element="80"/>
+        </state-transition-element> 
+        <state-transition-element id="79" symbol-set="+">
+                <activate-on-match element="80"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="60" symbol-set="+">
+                <activate-on-match element="71"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="70" symbol-set="+">
+                <activate-on-match element="81"/>
+        </state-transition-element> 
+        <state-transition-element id="80" symbol-set="+">
+                <activate-on-match element="81"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="71" symbol-set="+">
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="81" symbol-set="+">
+                <activate-on-match element="83"/>
+                <activate-on-match element="82"/>
+        </state-transition-element> 
+        <state-transition-element id="86" symbol-set="[Hh]">
+                <activate-on-match element="87"/>
+                <activate-on-match element="91"/>
+        </state-transition-element> 
+        <state-transition-element id="90" symbol-set="[^Hh]">
+                <activate-on-match element="95"/>
+        </state-transition-element> 
+        <state-transition-element id="87" symbol-set=".">
+                <activate-on-match element="88"/>
+                <activate-on-match element="92"/>
+        </state-transition-element> 
+        <state-transition-element id="91" symbol-set="[^.]">
+                <activate-on-match element="96"/>
+        </state-transition-element> 
+        <state-transition-element id="95" symbol-set=".">
+                <activate-on-match element="96"/>
+        </state-transition-element> 
+        <state-transition-element id="88" symbol-set="+">
+                <activate-on-match element="93"/>
+                <activate-on-match element="99"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="85"/>
+        </state-transition-element> 
+        <state-transition-element id="92" symbol-set="+">
+                <activate-on-match element="97"/>
+        </state-transition-element> 
+        <state-transition-element id="96" symbol-set="+">
+                <activate-on-match element="97"/>
+                <activate-on-match element="99"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="85"/>
+        </state-transition-element> 
+        <state-transition-element id="93" symbol-set="+">
+                <activate-on-match element="99"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="85"/>
+        </state-transition-element> 
+        <state-transition-element id="97" symbol-set="+">
+                <activate-on-match element="99"/>
+                <activate-on-match element="83"/>
+                <activate-on-match element="85"/>
+        </state-transition-element> 
+        <state-transition-element id="32" symbol-set=" ">
+                <activate-on-match element="34"/>
+                <activate-on-match element="38"/>
+        </state-transition-element> 
+        <state-transition-element id="47" symbol-set="[^,]">
+                <activate-on-match element="47"/>
+                <activate-on-match element="33"/>
+        </state-transition-element> 
+        <state-transition-element id="33" symbol-set=",">
+                <activate-on-match element="51"/>
+                <activate-on-match element="61"/>
+        </state-transition-element> 
+        <state-transition-element id="82" symbol-set=" ">
+                <activate-on-match element="86"/>
+                <activate-on-match element="90"/>
+                <activate-on-match element="84"/>
+        </state-transition-element> 
+        <state-transition-element id="84" symbol-set="(">
+                <activate-on-match element="86"/>
+                <activate-on-match element="90"/>
+                <activate-on-match element="85"/>
+        </state-transition-element> 
+        <state-transition-element id="85" symbol-set=")">
+                <activate-on-match element="99"/>
+                <activate-on-match element="83"/>
+        </state-transition-element> 
+        <state-transition-element id="99" symbol-set="[^$]">
+                <activate-on-match element="99"/>
+                <activate-on-match element="83"/>
+        </state-transition-element> 
+        <state-transition-element id="83" symbol-set="$">
+                <report-on-match/>
+        </state-transition-element> 
+</automata-network>

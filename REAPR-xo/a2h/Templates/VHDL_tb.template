@@ -1,0 +1,54 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE std.textio.all;
+use ieee.std_logic_textio.all;
+
+entity TB is
+end TB;
+
+architecture Test of TB is
+	component {{context['entity']}} is
+		port (
+			clock, reset, run : in std_logic;
+			data_in : in std_logic_vector(7 downto 0);
+			reports : out std_logic_vector({{context['report_length']}}-1 downto 0)
+		);
+	end component;
+	signal clock : std_logic := '1';
+	signal reset : std_logic := '1';
+	signal run : std_logic := '1';
+	signal data_in : std_logic_vector(7 downto 0) := (others=>'0');
+	signal reports : std_logic_vector({{context['report_length']}}-1 downto 0);
+begin
+	dut : {{context['entity']}}
+	port map(
+		clock=>clock,
+		reset=>reset,
+		run=>run,
+		data_in=>data_in,
+		reports=>reports
+	);
+	
+	process
+		file vec_file: text;
+		variable buf_in: line;
+		variable testv: std_logic_vector(7 downto 0);
+	begin
+		wait for 4 ns;
+		reset <= '0';
+		clock <= '0';
+		wait for 4 ns;
+		clock <= '1';
+		file_open(vec_file, "{{context['tb_infile']}}", read_mode);
+		while not endfile(vec_file) loop
+			readline(vec_file, buf_in);
+			read(buf_in, testv);
+			data_in <= testv;
+			
+			wait for 4 ns;
+			clock <= not clock;
+			wait for 4 ns;
+			clock <= not clock;
+		end loop;
+	end process;
+end Test;
